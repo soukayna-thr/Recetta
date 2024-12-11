@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Thème de base de l'application -->
+    <style name="Base.Theme.MyRecette" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primary_color</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">@color/secondary_color</item>
+        <item name="colorOnSecondary">@android:color/black</item>
+    </style>
+
+    <!-- Thème personnalisé de l'application -->
+    <style name="Theme.MyRecette" parent="Base.Theme.MyRecette" />
+</resources>

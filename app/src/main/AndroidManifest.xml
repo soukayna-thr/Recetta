@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myrecette">
+
+    <!-- Permissions nécessaires -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyRecette">
+
+        <!-- Définir LoginActivity comme l'activité principale (LAUNCHER) -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activité d'enregistrement -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <!-- Activité de consultation des recettes -->
+        <activity
+            android:name=".ViewRecipesActivity"
+            android:exported="false" />
+
+        <!-- Activité d'ajout de recettes -->
+        <activity
+            android:name=".AddRecipeActivity"
+            android:exported="false" />
+
+        <!-- Activité de modification des recettes -->
+        <activity
+            android:name=".EditRecipeActivity"
+            android:exported="false" />
+
+        <!-- Activité de détails de la recette -->
+        <activity
+            android:name=".RecipeDetailsActivity"
+            android:exported="false" />
+
+        <!-- Activité principale de l'application -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
